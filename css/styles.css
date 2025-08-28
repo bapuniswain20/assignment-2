@@ -1,4 +1,4 @@
-/* Reset margins */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,12 +15,12 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* Section styles */
+
 section {
-  position: relative; /* for title positioning */
+  position: relative; 
   border: 2px solid black;
   background-color: #f4f4f4;
-  padding: 40px 20px 20px; /* extra top padding for title */
+  padding: 40px 20px 20px; 
   margin: 10px;
 }
 
@@ -35,25 +35,23 @@ section .title {
   font-weight: bold;
 }
 
-/* Layout */
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Default (desktop): 3 columns */
 .col {
   flex: 1 1 30%;
 }
 
-/* Tablet view: 2 columns (>=768px and <=991px) */
+
 @media (min-width: 768px) and (max-width: 991px) {
   .col {
     flex: 1 1 45%;
   }
 }
 
-/* Mobile view: 1 column (<=767px) */
 @media (max-width: 767px) {
   .col {
     flex: 1 1 100%;
